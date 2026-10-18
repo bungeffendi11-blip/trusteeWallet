@@ -61,7 +61,7 @@ jobs:
         run: |
           npx jetifier
           rm -f shim.js
-          npx --yes rn-nodeify --hack --install
+          npx --yes rn-nodeify --hack --install -- --legacy-peer-deps
 
       - name: Build debug APK
         run: |
